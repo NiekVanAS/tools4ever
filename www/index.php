@@ -15,6 +15,7 @@
 
 <body>
     <header>
+        <?php include "nav.php"; ?>
         <img src="images/Obuh.png" alt="">
     </header>
     <a href="tools_index.php">Overzicht gereedschap</a>
