@@ -1,24 +1,20 @@
 <!-- <pre>
 <?php
-var_dump($_SERVER);
+var_dump($_POST);
 ?>
 </pre> -->
 
 <?php
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    echo "Er is geen POST request";
-    exit;
-}
 
 
 if (!isset($_POST['submit'])) {
     var_dump($_POST);
-    echo "Press the button next time";
+    echo "druk op de knop";
     exit;
 }
 
 if (!isset($_POST['tool_name']) || !isset($_POST['tool_price']) || !isset($_POST['tool_category']) || !isset($_POST['tool_brand'])) {
-    echo "FILL IN EVERYTHING";
+    echo "vull alles in graag";
     var_dump($_POST);
     exit;
 }
